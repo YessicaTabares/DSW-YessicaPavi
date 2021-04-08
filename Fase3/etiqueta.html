@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño y construcción II</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style type="text/css">
+        * {
+            padding: 0px;
+            margin: 4px;
+        }
+
+        #header {
+            margin: auto;
+            width: 150px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .nav li a {
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        .nav>li {
+            float: left;
+        }
+
+        .nav li a:hover {
+            background-color: red;
+        }
+
+        .nav li ul {
+            display: none;
+            position: absolute;
+            min-width: 140px;
+        }
+
+        .nav li:hover>ul {
+            display: block;
+        }
+
+        .nav li ul li {
+            position: relative;
+        }
+
+        .nav li ul li ul {
+            right: -140px;
+            top: 0px;
+        }
+    </style>
+</head>
+
+<body bgcolor="#F0EEEE">
+    <header>
+        <h1>ETIQUETAS BÁSICAS HTML, ATRIBUTOS Y VALORES</h1>
+        <div id="heades">
+            <ul class="nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Temas</a>
+                    <ul>
+                        <li><a href="etiqueta.html">Etiquetas básicas HTML</a></li>
+                        <li><a href="atributoyvalores.html">Atributos y valores</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Recursos Digitales</a>
+                    <ul>
+                        <li><a href="recurso  1.html">Recurso 1</a></li>
+                        <li><a href="recurso 2.html">Recurso 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Aprendizaje</a>
+                    <ul>
+                        <li><a href="#">Actividad 1</a></li>
+                        <li><a href="#">Actividad 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="autor.html">Autor</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="contenedor">
+        <section>
+            <br>
+            <h3>
+                <center>¿Qué es HTML?</center>
+            </h3>
+            <article>
+                <center> <img src="img/html.png" width="60" height="60" alt="logo_html"></center>
+                <p class="justificar">
+
+                    HTML (por sus siglas en ingles, HyperText Markup Language), es un lenguaje
+                    de marcado que nos permite hacer la estructura de una página web. Tenemos
+                    que aclarar que HTML no es un lenguaje de programación, pues carece de
+                    mecanismos para ejecutar cálculos, repeticiones o condiciones, lo que sí
+                    es, es un lenguaje de marcado. Es un lenguaje que le indicará al navegador
+                    web qué tipo de elemento es el que está en la estructura de una página web.
+                </p>
+                <p>
+                    <br>
+                <h3>
+                    <center>Que necesitamos para programar con HTML</center>
+                </h3>
+                </br>
+                <br class="justificar">
+                1. Para empezar a escribir código HTML necesitamos un editor de código como
+                puede ser: sublime text, notepad, visual studio code, CoffeCup Free Editor,
+                entre otros e incluso el famoso bloc de notas. Para escribir código HTML nos
+                servirá hasta el editor más básico y sencillo.
+                </p>
+                <p class="justificar">
+                    2. Necesitamos un navegador que nos sirva para visulizar el resultado de nuestro
+                    código HTML en la pantalla
+                </p>
+                <p class="justificar">
+                    3. creamos un documento HTML debemos guardarlo con la extensión .html para
+                    que el navegador pueda ejecutarlo como tal.
+                </p>
+                <p>
+                    <br>
+                <h4>Estructura básica HTML</h4>
+                </br>
+                <center> <img src="img/estructura.png" width="250" height="150" alt="logo_html"></center>
+                <center>
+                    <h5>Figura 1. Estructura básica HTML.</h5>
+                </center>
+                </p>
+                </br>
+
+
+                <p>
+                    <br>
+                <h3>
+                    <center>Etiquetas básicas de HTML</center>
+                </h3>
+                </br>
+                <br class="justificar">
+                Existen una serie de etiquetas que son las más usadas para crear cualquier
+                documento HTML,
+                <p>
+                    <center>
+                        <h5><i>Tabla 1.</i> Etiquetas básicas HTML</h5>
+                    </center>
+                </p>
+                <center>
+                    <table border="2" class="tabla">
+                </center>
+                <tr>
+                    <td><strong>
+                            <center>Etiqueta</center>
+                        </strong></td>
+                   <td><strong>
+                            <center>Función</center>
+                        </strong></td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>HTML</center>
+                    </td>
+                    <td>
+                        <center>Indica el comienzo del documento HTML</center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>HEAD</center>
+                    </td>
+                    <td>
+                        <center>Indica la cabecera de la página</center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>BODY</center>
+                    </td>
+                    <td>
+                        <center>Es el cuerpo de la página, en donde
+                            va lo que se se ve en el navegador al cargar</center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <Center>H1,H2...</center>
+                    </td>
+                    <td>
+                        <center>Son los titulos o encabezados,siendo h1 el mas grande
+                            y el h6 el más pequeño</center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>A</center>
+                    </td>
+                    <td>
+                        <center>Define enlaces</center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>P</center>
+                    </td>
+                    <td>
+                        <center>El texto de esta etiqueta forman un parrafo</center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>B</center>
+                    </td>
+                    <td>
+                        <center>Se utiliza para resaltar el texto</center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>U</center>
+                    </td>
+                    <td>
+                        <center>Texto subrayado</center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>I</center>
+                    </td>
+                    <td>
+                        <center>Texto en cursiva</center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>MARQUEE</center>
+                    </td>
+                    <td>
+                        <center>Da movimiento al texto</center>
+                    </td>
+                </tr>
+                </table>
+                <p class="justificar">
+                <br>
+                  De acuerdo a la tabla 1 identificamos las etiquetas más básicas y 
+                  utilizadas con frecuencia. Un ejemplo de como aplicar estas seria:
+                </br>
+                <center> <img src="img/ejemplo1.PNG" width="400" height="50" alt="logo_html"></center>
+                <center>
+                    <h5>Figura 2. Etiqueta p</p>.</h5>
+                </center>
+                </p>
+                </br>
+
+                </br>
+                </p>
+            </article>
+            </br>
+        </section>
+        <Aside>
+            <iframe
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                width="1000" height="560" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                <p>
+                  <h3>  Video complementario al tema</h3>
+                </p>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gHIQ1ik1x2U?controls=0&amp;start=22" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </br>
+        </Aside>
+    </div>
+    <footer class="bibliografia">
+        <h5>
+            Bibliografia
+        </h5>
+        <h5>
+            Desarrolladoreswebs.org. (2019) Qué es HTML para qúe sirve y cómo funciona. Recuperado de. https://desarrolladoresweb.org/html/que-es-html/ 
+        </h5>
+        <h5>
+            Ney. (2019) Informaática-conocimietnos básicos de HTML 01. Recuperado de. https://ney.one/informatica-conocimientos-basicos-de-html-01/
+        </h5>
+    </footer>
+    <footer>
+        <center><img src="img/UNAD.png" width="100" height="100" alt="Unad"></center>
+        <h5>
+            <center>
+                Correo institucional: ypavit@unadvirtual.edu.co <br>
+                Skype: live:45f6416d3ad59fa3 <br>
+                Fecha de actualización: 05/04/2021
+            </center>
+    </footer>
+</body>
+
+</html>

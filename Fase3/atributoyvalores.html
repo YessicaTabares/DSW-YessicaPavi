@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño y construcción II</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style type="text/css">
+        * {
+            padding: 0px;
+            margin: 4px;
+        }
+
+        #header {
+            margin: auto;
+            width: 150px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .nav li a {
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        .nav>li {
+            float: left;
+        }
+
+        .nav li a:hover {
+            background-color: red;
+        }
+
+        .nav li ul {
+            display: none;
+            position: absolute;
+            min-width: 140px;
+        }
+
+        .nav li:hover>ul {
+            display: block;
+        }
+
+        .nav li ul li {
+            position: relative;
+        }
+
+        .nav li ul li ul {
+            right: -140px;
+            top: 0px;
+        }
+    </style>
+</head>
+
+<body bgcolor="#F0EEEE">
+    <header>
+        <h1>ETIQUETAS BÁSICAS HTML, ATRIBUTOS Y VALORES</h1>
+        <div id="heades">
+            <ul class="nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Temas</a>
+                    <ul>
+                        <li><a href="etiqueta.html">Etiquetas básicas HTML</a></li>
+                        <li><a href="atributoyvalores.html">Atributos y valores</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Recursos Digitales</a>
+                    <ul>
+                        <li><a href="recurso  1.html">Recurso 1</a></li>
+                        <li><a href="recurso 2.html">Recurso 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Aprendizaje</a>
+                    <ul>
+                        <li><a href="#">Actividad 1</a></li>
+                        <li><a href="#">Actividad 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="autor.html">Autor</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="contenedor">
+        <section>
+            <br>
+            <h3>
+                <center>¿Qué son los atributos en HTML?</center>
+            </h3>
+            <article>
+                <center> <img src="img/html.png" width="60" height="60" alt="logo_html"></center>
+                <p class="justificar">
+                    Los atributos en HTML se pueden considerar como información adicional que
+                    se coloca siempre en la etiqueta de apertura, esto para añadir, complementar
+                    información o significado al elemento HTML al que estamos colocando.
+                </p>
+                <br>
+                <p>
+                <h3>Tipos de atributos</h3>
+                </p>
+                <p class="justificar">
+                    Aunque cada una de las etiquetas define sus propios atributos, entonctramos
+                    diferententes tipos de los acuales tememos:
+                </p>
+                </br>
+                <br>
+                <p>
+                    1. Atributos <b>básicos</b>
+                </p>
+                <p>
+                    2. Atributos de <b>internacionalización</b>
+                </p>
+                <p>
+                    3. Atributos de <b>eventos</b>
+                </p>
+                <p>
+                    4. Atributos de <b>foco</b>
+                </p>
+                </br>
+                <br>
+                <p>
+                <h4>Atributos básicos</h4>
+                </p>
+                <p class="justificar">
+                    Los atributos básicos se utilizan en la mayoría de etiquetas HTML y XHTML, aunque
+                    adquieren mayor sentido cuando se utilizan hojas de estilo en cascada (CSS):
+                </p>
+                </br>
+                <br>
+                <p>
+                <h4>Atributos de internacionalización</h4>
+                </p>
+                <p class="justificar">
+                    Estos atributos se utilizan en aquellas páginas que muestran sus contenidos en varios
+                    idiomas y las que quieran indicar de forma explícita el idioma de sus contenidos
+                </p>
+                </br>
+                <br>
+                <p>
+                <h4>Atributos de eventos</h4>
+                </p>
+                <p class="justificar">
+                    Estos atributos se utilizan en las páginas web que incluyen código JavaScript para realizar
+                    acciones dinámicas sobre los elementos de la página.
+                </p>
+                </br>
+                <br>
+                <p>
+                <h4>Atributos de foco</h4>
+                </p>
+                <p class="justificar">
+                    Se le denomina foco o focus, cuando un control o elemento del documento ha sido seleccionado.
+                    Cuando ese elemento deja de estar seleccionado, "pierde el foco" y es el nuevo elemento
+                    seleccionado el que se dice que tiene "el foco".
+                </p>
+                </br>
+                <br>
+                <h3>
+                    <center>Lista de atributos más usado en HTML</center>
+                </h3>
+                </br>
+                <p>
+                    <center>
+                        <h5><i>Tabla 2.</i> Atributos</h5>
+                    </center>
+                </p>
+                <center>
+                    <table border="2" class="tabla">
+                </center>
+                <tr>
+                    <td><strong>
+                            <center>Atributos</center>
+                        </strong></td>
+                    <td><strong>
+                            <center>Función</center>
+                        </strong></td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>id="":</center>
+                    </td>
+                    <td>
+                        <center>Identifica un elemento único.</center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>class =” ”:</center>
+                    </td>
+                    <td>
+                        <center>Identificador múltiple.</center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>align =” ”:</center>
+                    </td>
+                    <td>
+                        <center>Alineación de contenido.</center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <Center>border =” ”:</center>
+                    </td>
+                    <td>
+                        <center>Para darle borde al contenido.</center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>style =” ”: </center>
+                    </td>
+                    <td>
+                        <center>Para darle un estilo al contenido.</center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>background-color =” ”:</center>
+                    </td>
+                    <td>
+                        <center>Para color de fondo.</center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>href =” ”:</center>
+                    </td>
+                    <td>
+                        <center>Para enlaces html.</center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>height =” ”: </center>
+                    </td>
+                    <td>
+                        <center>Para determinar altura.</center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>width =” ”:</center>
+                    </td>
+                    <td>
+                        <center>Para determinar ancho.</center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>src=“ ”:</center>
+                    </td>
+                    <td>
+                        <center>Para imágenes.</center>
+                    </td>
+                </tr>
+                </table>
+                <p class="justificar">
+                    <br>
+                    Teniendo en cuenta los atributos de la tabla anterior podemos coloar los atributos
+                    de siguiente manera: atributo= "<b>Valor</b> tengase en cuenta que este debe de ir
+                    dentro de la etiquta de apertura
+                 <br>
+                    Ejemplo: <img src="img/ejemplo2.PNG">
+                </br>
+                <br>
+                Con esta estructura y la tabla 2 podemos realizar entonces lo siguiente:
+                </br>
+                <p>
+                    <center> <img src="img/ejemplo3.PNG" width="400" height="50" alt="logo_html"></center>
+                    <center>
+                        <h5>Figura 2. estructura atributo
+                </p>.</h5>
+            </article>
+
+                <hr>
+                <br>
+                <h3>
+                    <center>¿Qué es un valor de un atributo?</center>
+                </h3>
+                <article>
+                    
+                    <p class="justificar">
+                        Cuando se hace uso de un atributo HTML se debe especificar su valor, este
+                        puede representar una cantidad exacta, característica especifica o 
+                        simplemente en que medida se ejecutará dicho atributo.
+                    </p>
+                    <p>
+                        El valor se expresa entre comillas después del signo de (=), de acuerdo al
+                        atributo, pueden haber una variedad de valores disponibles. Por ejemplo,
+                        en caso de <b>aling</b> puede tomar el valor de <b>center</b>(centro),
+                         <b>right</b> (derecha), <b>left</b>(izquierda), <b>justify</b>(justificado).
+                    </p>
+                    <br>
+                    <p>
+                    <h3>Atributos HTML y sus valores</h3>
+                    </p>
+                    <p class="justificar">
+                        A continuación veamos algunos atributos y los valores.
+                    </p>
+                    </br>
+                    
+                    <br>
+                    <p>
+                    <h4>Atributo: valores</h4>
+                    </p>
+                   
+                    <p>
+                        <center>
+                            <h5><i>Tabla 3.</i> Valores de atributos </h5>
+                        </center>
+                    </p>
+                    <center>
+                        <table border="2" class="tabla">
+                    </center>
+                    <tr>
+                        <td><strong>
+                                <center>Atributos</center>
+                            </strong></td>
+                        <td><strong>
+                                <center>Valores</center>
+                            </strong></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>id="":</center>
+                        </td>
+                        <td>
+                            <center>center, right, left, justify</center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>bgcolor=” ”:</center>
+                        </td>
+                        <td>
+                            <center>red, green, black </center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>href =” ”:</center>
+                        </td>
+                        <td>
+                            <center>dirección de una carpera o URL</center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>height =” ”: </center>
+                        </td>
+                        <td>
+                            <center>10px, 12 em, 100%</center>
+                        </td>
+                    </tr>
+                    </table>
+                    <p class="justificar">
+                        Ejemplo:
+                        <br>
+                        <center> <img src="img/ejemplo4.PNG" width="400" height=200" alt="logo_html"></center>
+                        <center>
+                            <h5>Figura 3. Ejemplo de valores de atributos
+                            </br>
+                    </p>.</h5>
+                </article>
+        </section>
+
+        <Aside>
+            <iframe
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                width="1000" height="560" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+              <p>
+                <center> <img src="img/ejemplo5.jpg" width="300" height=300" alt="ejemplo5"></center>
+              </p>  
+            <p>
+            <h3> Video complementario al tema</h3>
+            </p>
+            <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FcGWcYhTjbw?controls=0&amp;start=15" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </br>
+        </Aside>
+    </div>
+    <footer class="bibliografia">
+        <h5>
+            Bibliografia
+        </h5>
+        <h5>
+            Desarrolladoreswebs.org. (2019) Atributos en HTML – qué son, para qué sirven y cuáles son. Recuperado de. https://desarrolladoresweb.org/html/atributos-html/ 
+        </h5>
+        <h5>
+            Garro, A. (104) HTML. Capítulo 3 etiquetas, atributos y elementos https://www.arkaitzgarro.com/xhtml/capitulo-3.html
+        </h5>
+    </footer>
+    <footer>
+        <center><img src="img/UNAD.png" width="100" height="100" alt="Unad"></center>
+        <h5>
+            <center>
+                Correo institucional: ypavit@unadvirtual.edu.co <br>
+                Skype: live:45f6416d3ad59fa3 <br>
+                Fecha de actualización: 05/04/2021
+            </center>
+    </footer>
+</body>
+
+</html>
