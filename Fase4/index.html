@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño y construcción II</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style type="text/css">
+        * {
+            padding: 0px;
+            margin: 4px;
+        }
+
+        #header {
+            margin: auto;
+            width: 150px;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .nav li a {
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        .nav>li {
+            float: left;
+        }
+
+        .nav li a:hover {
+            background-color: red;
+        }
+
+        .nav li ul {
+            display: none;
+            position: absolute;
+            min-width: 140px;
+        }
+
+        .nav li:hover>ul {
+            display: block;
+        }
+
+        .nav li ul li {
+            position: relative;
+        }
+
+        .nav li ul li ul {
+            right: -140px;
+            top: 0px;
+        }
+    </style>
+</head>
+
+<body bgcolor="#F0EEEE">
+    <header>
+        <h1>ETIQUETAS BÁSICAS HTML, ATRIBUTOS Y VALORES</h1>
+        <div id="heades">
+            <ul class="nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Temas</a>
+                    <ul>
+                        <li><a href="etiqueta.html">Etiquetas básicas HTML</a></li>
+                        <li><a href="atributoyvalores.html">Atributos y valores</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Recursos Digitales</a>
+                    <ul>
+                        <li><a href="recurso  1.html">Recurso 1</a></li>
+                        <li><a href="recurso 2.html">Recurso 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Aprendizaje</a>
+                    <ul>
+                        <li><a href="evaluacion1.html">Actividad 1</a></li>
+                        <li><a href="evaluacion2.html">Actividad 2</a></li>
+                    </ul>
+                </li>
+                <li><a href="autor.html">Autor</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="contenedor">
+        <section>
+            <br>
+            <h2><center>Propósito del sitio web</center></h2>
+            <p class="justificar">
+                <br>
+                Tiene como finalidad adquir conocimientos y estudiar la etiquetas
+                básicas, atributos y valores que pérmiten la creación de páginas 
+                web. La importancia de conocer cada elemento de HTML radica en que
+                sin estas no podriamos navegar ¿porqué no podriamos navegar? sin 
+                etiquetas, atributos y valores seria muy complicado comprender lo 
+                que se quiere transmitir, es decir, no se comprenderia el elemento 
+                creado.
+                </br>
+            </p>
+            </br>
+            <hr>
+            <br>
+            <h3><center>Etiquetas HTML </center></h3>
+             </br>
+            <br>
+              <article>
+                  <p class="justificar">
+                     HTML es un markup language, lo que significa que está escrito con
+                     códigos que puede leer una persona sin que sea necesario compilarlo 
+                     primero. En otras palabras, el texto en una página web está «marcado» 
+                     con estos códigos para dar instrucciones al navegador web sobre cómo
+                     mostrar el texto. Estas etiquetas de marcado son las propias etiquetas
+                     HTML.
+                  </p>
+              </article> 
+            </br> 
+            </hr>
+            <hr>
+            <br>
+            <h3><center>Atributos y Valores</center></h3>
+             </br>
+            <br>
+              <article>
+                  <p class="justificar">
+                     Las etiquetas son la estructura básica del HTML. Estas etiquetas o tags
+                     se componen y contienen otras propiedades, como son los atributos y el 
+                     contenido. Una etiqueta por sí sola a veces no contiene la suficiente
+                     información para estar completamente definida. Para ello contamos con
+                     los atributos: pares nombre-valor separados por "=" y escritos en la 
+                     etiqueta inicial de un elemento después del nombre del elemento. 
+                     El valor puede estar encerrado entre "comillas dobles" o 'simples'.
+                  </p>
+              </article> 
+            </br> 
+            </hr>
+        </section>
+        <Aside>
+             <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="1000" height="560" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe> 
+        </Aside>
+    </div>
+    <footer>
+        <center><img src="img/UNAD.png" width="100" height="100" alt="Unad"></center>
+        <h5><center>
+            Correo institucional: ypavit@unadvirtual.edu.co <br>
+            Skype:  live:45f6416d3ad59fa3 <br>
+            Fecha de actualización: 05/04/2021
+        </center>
+    </footer>
+</body>
+
+</html>
